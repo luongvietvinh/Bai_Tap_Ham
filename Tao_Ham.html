@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function script (swen){
+        let result = "";
+        if (swen) {
+            result = "Excellent. We'll play a nice game of chess";
+        }else {
+            result = "Maybe later then.";
+        }
+        return result;
+    }
+    let confinswen = confirm("Shall we play a game?");
+    let theswen = script(confinswen);
+    alert(theswen);
+</script>
+</body>
+</html>

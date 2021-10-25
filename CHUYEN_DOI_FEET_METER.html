@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<label>
+    <p>meter <input type="number" id="mynumber">
+        <button onclick="clickk()">click me!</button>
+    </p>
+
+    <p id="result1"></p>
+
+    <p>foot <input type="number" id="mynum">
+        <button onclick="statui()">click me!</button>
+    </p>
+
+    <p id="result"></p>
+</label>
+
+<script>
+    function clickk() {
+        let meter = document.getElementById("mynumber").value;
+        document.getElementById("result1").innerHTML = 'foot = ' + 3.279 * meter;
+    }
+
+    function statui() {
+        let foot = document.getElementById("mynum").value;
+        document.getElementById("result").innerHTML = "meter = " + 0.305 * foot;
+    }
+
+</script>
+</body>
+</html>
