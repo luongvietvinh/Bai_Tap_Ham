@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Viết hàm nhận vào một số,
+        kiểm tra xem nếu số đưa vào có phải là nguyên dương không.
+        Nếu là nguyên dương trả về true, ngược lại trả về false.</title>
 </head>
 <body>
-$END$
+<script>
+    let input = prompt("moi nhap so");
+
+    function checkNum(N) {
+        if (N > 0) {
+            document.write("la: TRUE ")
+        } else {
+            document.write("la: FALSE ")
+        }
+
+    }
+
+    checkNum(input);
+</script>
 </body>
 </html>

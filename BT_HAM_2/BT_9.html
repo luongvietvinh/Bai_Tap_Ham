@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>iết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ,
+        kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
+        Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1. </title>
 </head>
 <body>
-$END$
+<script>
+    let soPhanTu = parseInt(prompt(" Nhập số phần tử mảng a: "));
+    let arr = new Array(soPhanTu);
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = prompt("Nhập giá trị thứ: " + i + "của mảng a: ");
+    }
+    document.write(arr + "</br>");
+    let Character = prompt("Nhập kí tự: ")
+
+    function checkCharacter(kiTu) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (kiTu === arr[i]) {
+                count++;
+            }
+        }
+        if (count !== 0) {
+            alert("Kí tự " + kiTu + " xuất hiện " + count + " lần")
+        } else {
+            alert("-1")
+        }
+    }
+
+    checkCharacter(Character);
+
+</script>
 </body>
 </html>

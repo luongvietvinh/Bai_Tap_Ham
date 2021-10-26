@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào.
+        Gọi hàm vừa xây dựng được.</title>
 </head>
 <body>
-$END$
+<script>
+    let N = prompt("moi nhap so");
+
+    function LuyThua(N) {
+        let propro = 1;
+        for (let i = 1; i < N; i++) {
+            propro *= 1;
+        }
+        document.write("gia thua la : " + propro);
+    }
+
+    LuyThua(N);
+</script>
 </body>
 </html>

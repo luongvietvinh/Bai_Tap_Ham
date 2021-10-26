@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title> Viết hàm truyền vào mảng số nguyên bất kỳ,
+        sau đó đảo ngược mảng số nguyên đó.
+
+    </title>
 </head>
 <body>
-$END$
+<script>
+    let soPhanTu = parseInt(prompt(" Nhập số phần tử mảng a: "));
+    let intNumber = new Array(soPhanTu);
+    for (let i = 0; i < intNumber.length; i++) {
+        intNumber[i] = prompt("Nhập giá trị thứ: " + i + "của mảng a: ");
+    }
+    document.write(intNumber + "</br>");
+
+    function reverseArray(arr) {
+        arr.reverse();
+        return arr;
+    }
+
+    reverseArray(intNumber);
+    document.write(intNumber);
+</script>
 </body>
 </html>

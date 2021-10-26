@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không.
+        <!-- Nếu là ký tự số hàm trả về true, ngược lại trả về false.</title>-->
 </head>
 <body>
-$END$
+<script>
+    let inputA = prompt("moi nhap du lieu");
+
+    function checkData(data) {
+        if (isNaN(data)) {
+            document.write("false");
+        } else {
+            document.write("true");
+        }
+
+    }
+
+    checkData(inputA)
+</script>
 </body>
 </html>
